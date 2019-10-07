@@ -1,3 +1,5 @@
+Editted from [OmaraAflak-Medium](https://github.com/OmarAflak/Medium-Python-Neural-Network)
+
 # Mathematics of Neural Network
 
 This code is part of my post on **[medium](https://medium.com/@omaraflak/math-neural-network-from-scratch-in-python-d6da9f29ce65)**.
