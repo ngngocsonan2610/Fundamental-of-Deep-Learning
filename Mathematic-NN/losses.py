@@ -6,3 +6,7 @@ def mse(y_true, y_pred):
 
 def mse_prime(y_true, y_pred):
     return 2*(y_pred-y_true)/y_true.size
+
+# cost or loss function  
+def loss_softmax(Y, Yhat):    
+    return -np.sum(Y*np.log(Yhat))/Y.shape[1]

@@ -1,10 +1,10 @@
 import numpy as np
 
 # activation function and its derivative
-def tanh(x):
+def tanh(self,x):
     return np.tanh(x)
 
-def tanh_prime(x):
+def tanh_prime(self,x):
     return 1-np.tanh(x)**2
 
 def RELU(self,x):
@@ -22,6 +22,16 @@ def sigmoid(self,x):
 def sigmoid_prime(self,x):
     """gradiant through sigmoid function"""
     return x*(1-x)
+
+def softmax(self,x):
+    e_x = np.exp(x - np.max(x, axis = 0, keepdims = True))
+    return e_x / e_x.sum(axis = 0)
+
+def softmax_prime(self,x):
+    s = x.reshape(-1,1)
+    return np.diagflat(s) - np.dot(s, s.T)
+    
+
         
         
         
