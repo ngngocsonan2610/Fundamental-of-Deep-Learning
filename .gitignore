@@ -2,7 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
-files/
+.files/
+.image/
+.book/
+0.MsDS_DL_Dang/
+
 
 # C extensions
 *.so
